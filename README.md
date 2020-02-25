@@ -31,7 +31,7 @@ Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](ht
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (GNU) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (GNU) - mira el archivo [LICENSE.md](LICENSE) para detalles
 
 ## Expresiones de Gratitud 🎁
 
