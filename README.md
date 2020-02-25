@@ -1,4 +1,4 @@
-# Título del Proyecto
+# PIC18f45k50
 
 _Microcontrolador PIC18f45k50_
 
@@ -6,12 +6,11 @@ _Microcontrolador PIC18f45k50_
 
 _Codigos sobre el pic 18f45k50 2020_
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
 
 ### Pre-requisitos 📋
 
-_IDE Mplab/Proteus_
+_IDE Mplab_
+_Proteus_
 
 ```
 Hola mundo
@@ -28,7 +27,7 @@ Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](ht
 
 ## Autores ✒️
 
-* **JuankCl** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **JuankCl** - *Documentación* - [juankcl](https://github.com/juankcl)
 
 ## Licencia 📄
 
