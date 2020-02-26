@@ -1,4 +1,12 @@
-|    | Intruccion                                | Mnemonico                          | Operandos | Para que sirve                                                    |  Ciclos de Instrucción que tarda (i Ciclo Instrucción = 4 Ciclos de Reloj) | Notas |
+# Tabla de Instrucciones de Ensamblador de MicroChip (mpasm)
+
+Esta lista esta de manera oficial en el DataSheet de MicroChip del PIC, pero como un intento de clarificar el contenido realizé esta versión
+Enjoy :)
+
+>Aprende a resolver todos los problemas que ya hayan sido resueltos.  
+                                                                —Richard Feynman
+
+|    | Instrucción                                | Mnemonico                          | Operandos | Para que sirve                                                    |  Ciclos de Instrucción que tarda (i Ciclo Instrucción = 4 Ciclos de Reloj) | Notas |
 |:--:|-------------------------------------------|------------------------------------|-----------|-------------------------------------------------------------------|:--------------------------------------------------------------------------:|-------|
 |    | BYTE-ORIENTED OPERATIONS                  |                                    |           |                                                                   |                                                                            |       |
 |  1 | ADDWF                                     | Add W to F                         | f,d,a     | Suma lo que haya en el registro W y F                             |                                      1                                     |       |
