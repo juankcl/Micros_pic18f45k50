@@ -24,6 +24,7 @@ _MPLAB IDE y Proteus 8.9_
 ## Wiki 📖
 
 Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+
 Puedes encontrar mas acerca del al pcb que usamos para manipular el PIC en página de su autor BeeDev [BeeDev UG](https://sites.google.com/view/beedev/p%C3%A1gina-principal?authuser=0)
 
 ## Autores ✒️
