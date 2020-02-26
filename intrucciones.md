@@ -1,81 +1,81 @@
-| Intruccion | Para que sirve | Notas |
-|------------|----------------|-------|
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
-|            |                |       |
+| Intruccion                                | Mnemonico                          | Operandos | Para que sirve                                                    |  Ciclos de Instrucción que tarda (i Ciclo Instrucción = 4 Ciclos de Reloj) | Notas |
+|-------------------------------------------|------------------------------------|-----------|-------------------------------------------------------------------|:--------------------------------------------------------------------------:|-------|
+| ADDWF                                     | Add W to F                         | f,d,a     | Suma lo que haya en el registro W y F                             |                                      1                                     |       |
+| ADDWFC                                    | Add W to F and Carry               | f,d,a     | Suma W y F y guarda bit de acarreo en F                           |                                      1                                     |       |
+| ANDWF                                     | And W with F                       | f,d,a     | Operación AND de W con F                                          |                                      1                                     |       |
+| CLRF                                      | Clear F                            | f,a       | Limpia registro F                                                 |                                      1                                     |       |
+| COMF                                      | Complement f                       | f,d,a     | Complemento de f                                                  |                                      1                                     |       |
+| CPFSEQ                                    | Compare f skip if is Equal         | f,a       | Compara f con WREG, salta la instrucción siguiente si son iguales |                                                                            |       |
+| CPFSGT                                    | Compare f skip if is  Greater Than |           |                                                                   |                                                                            |       |
+| CPFSLT                                    | Compare f skip if is Less  Than    |           |                                                                   |                                                                            |       |
+| DECF                                      | Decrement f                        |           |                                                                   |                                                                            |       |
+| DECFSZ                                    | Decrement f, skip if is Zero       |           |                                                                   |                                                                            |       |
+| DCFSNZ                                    | Decrement f, skip if isn,t Zero    |           |                                                                   |                                                                            |       |
+| INCF                                      | Increment f                        |           |                                                                   |                                                                            |       |
+| INCFSZ                                    | Increment f, skip if is Zero       |           |                                                                   |                                                                            |       |
+| INFSNZ                                    | Increment f, skip if is not zero   |           |                                                                   |                                                                            |       |
+| IORWF                                     | Inclusive OR WREG with f           |           |                                                                   |                                                                            |       |
+| MOVF                                      | Move f                             |           |                                                                   |                                                                            |       |
+| MOVFF                                     | Move f(source) to f(destination)   |           |                                                                   |                                                                            |       |
+| MULWF                                     | Multiply WREG with f               |           |                                                                   |                                                                            |       |
+| NEGF                                      | Negate f                           |           |                                                                   |                                                                            |       |
+| RLCF                                      | Rotate Left Carry f                |           |                                                                   |                                                                            |       |
+| RLNCF                                     | Rotate Left no carry f             |           |                                                                   |                                                                            |       |
+| RRCF                                      | Rotate Right Carry f               |           |                                                                   |                                                                            |       |
+| RRNCF                                     | Rotate Right No Carry f            |           |                                                                   |                                                                            |       |
+| SETF                                      | Set f                              |           |                                                                   |                                                                            |       |
+| SUBFWB                                    | Subtract from WREG with borrow     |           |                                                                   |                                                                            |       |
+| SUBWF                                     | Subtract WREG from f               |           |                                                                   |                                                                            |       |
+| SUBWFB                                    | Subtract WREG from f with borrow   |           |                                                                   |                                                                            |       |
+| SWAPF                                     | Swap nibbles in f                  |           |                                                                   |                                                                            |       |
+| TSTFSZ                                    | Test f, skip if Zero               |           |                                                                   |                                                                            |       |
+| XORWF                                     | Exclusive OR WREG with f           |           |                                                                   |                                                                            |       |
+| BIT-ORIENTED OPERATIONS                   |                                    |           |                                                                   |                                                                            |       |
+| BCF                                       | Bit Clear f                        |           |                                                                   |                                                                            |       |
+| BSF                                       | Bit Set f                          |           |                                                                   |                                                                            |       |
+| BTFSC                                     | Bit Test f, skip if Clear          |           |                                                                   |                                                                            |       |
+| BTFSS                                     | Bit Test f, skip if set            |           |                                                                   |                                                                            |       |
+| BTG                                       | Bit Toggle f                       |           |                                                                   |                                                                            |       |
+| CONTROL OPERATIONS                        |                                    |           |                                                                   |                                                                            |       |
+| BC                                        | Branch if Carry                    |           |                                                                   |                                                                            |       |
+| BN                                        | Branch if Negative                 |           |                                                                   |                                                                            |       |
+| BNC                                       | Branch if Not Carry                |           |                                                                   |                                                                            |       |
+| BNN                                       | Branch if Not Negative             |           |                                                                   |                                                                            |       |
+| BNOV                                      | Branch if Not Overflow             |           |                                                                   |                                                                            |       |
+| BNZ                                       | Branch if not Zero                 |           |                                                                   |                                                                            |       |
+| BOV                                       | Branch if Overflow                 |           |                                                                   |                                                                            |       |
+| BRA                                       | Branch Unconditionally             |           |                                                                   |                                                                            |       |
+| BZ                                        | Branch if Zero                     |           |                                                                   |                                                                            |       |
+| CALL                                      | call subroutine                    |           |                                                                   |                                                                            |       |
+| CLRWDT                                    | Clear WatchDog Timer               |           |                                                                   |                                                                            |       |
+| DAW                                       | Decimal Adjust WREG                |           |                                                                   |                                                                            |       |
+| GOTO                                      | Go to address                      |           |                                                                   |                                                                            |       |
+| NOP                                       | No operation                       |           |                                                                   |                                                                            |       |
+| POP                                       | Pop top of return satck            |           |                                                                   |                                                                            |       |
+| PUSH                                      | Push top of return stack           |           |                                                                   |                                                                            |       |
+| RCALL                                     | Relative Call                      |           |                                                                   |                                                                            |       |
+| RESET                                     | Software device Reset              |           |                                                                   |                                                                            |       |
+| RETFIE                                    | Return from interrupt enable       |           |                                                                   |                                                                            |       |
+| RETLW                                     | Return with literal in WREG        |           |                                                                   |                                                                            |       |
+| RETURN                                    | Return from Subroutine             |           |                                                                   |                                                                            |       |
+| SLEEP                                     | Goto into Standby mode             |           |                                                                   |                                                                            |       |
+| LIETRAL OPERATIONS                        |                                    |           |                                                                   |                                                                            |       |
+| ADDLW                                     | Add literal and WREG               |           |                                                                   |                                                                            |       |
+| ANDLW                                     | AND literal with WREG              |           |                                                                   |                                                                            |       |
+| IORLW                                     | Inclusive OR literal with WREG     |           |                                                                   |                                                                            |       |
+| LFSR                                      | Move literal (12 bit) to FSR       |           |                                                                   |                                                                            |       |
+| MOVLB                                     | Move literal to BSR                |           |                                                                   |                                                                            |       |
+| MOVLW                                     | Move literal to WREG               |           |                                                                   |                                                                            |       |
+| RETLW                                     | Return with literal in WREG        |           |                                                                   |                                                                            |       |
+| SUBLW                                     | Subtract WREG from literal         |           |                                                                   |                                                                            |       |
+| XORLW                                     | Exclusive OR literal with WREG     |           |                                                                   |                                                                            |       |
+| DATA MEMORY <>  PROGRAM MEMORY OPERATIONS |                                    |           |                                                                   |                                                                            |       |
+| TBLRD*                                    | Table Read                         |           |                                                                   |                                                                            |       |
+|                                           |                                    |           |                                                                   |                                                                            |       |
+|                                           |                                    |           |                                                                   |                                                                            |       |
+|                                           |                                    |           |                                                                   |                                                                            |       |
+|                                           |                                    |           |                                                                   |                                                                            |       |
+|                                           |                                    |           |                                                                   |                                                                            |       |
+|                                           |                                    |           |                                                                   |                                                                            |       |
+|                                           |                                    |           |                                                                   |                                                                            |       |
+|                                           |                                    |           |                                                                   |                                                                            |       |
