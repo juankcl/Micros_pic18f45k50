@@ -3,6 +3,10 @@
 Esta lista esta de manera oficial en el DataSheet de MicroChip del PIC, pero como un intento de clarificar el contenido realizé esta versión
 Enjoy :)
 
+Parámetros:
+- **f** y **d**  se toman como variables puerto
+- **a** se toma como la posicion de un bit en específico
+
 >Aprende a resolver todos los problemas que ya hayan sido resueltos.  
                                                                 —Richard Feynman
 
