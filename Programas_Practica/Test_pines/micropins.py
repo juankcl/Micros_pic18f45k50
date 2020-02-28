@@ -12,13 +12,17 @@ qtCreatorFile = "mainwindow.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 # Array con los nombres de todos los pines
-pines = ["RE3","RA0","RA1","RA2","RA3","RA4","RA5","RE0","RE1","RE2","VDD","VSS","RA7","RA6","RC0","RC1","RC2","VUSB","RD0","RD1","RB7","RB6","RB5","RB4","RB3","RB2","RB1","RB0","VDD","VSS","RD7","RD6","RD5","RD4","RC7","RC6","D++","D-","RD3","RD2"]
+pines = ["RE3", "RA0", "RA1", "RA2", "RA3", "RA4", "RA5", "RE0", "RE1", "RE2",
+         "VDD", "VSS", "RA7", "RA6", "RC0", "RC1", "RC2", "VUSB", "RD0", "RD1", 
+         "RB7", "RB6", "RB5", "RB4", "RB3", "RB2", "RB1", "RB0", "VDD", "VSS", 
+         "RD7", "RD6", "RD5", "RD4", "RC7", "RC6", "D++", "D-", "RD3", "RD2"]
+
 
 class microPins(QMainWindow, Ui_MainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
-        self.setupUi(self)      
+        self.setupUi(self)
 
         # Conectar las señales de los botones
         self.btMostrarPines.clicked.connect(self.MostrarPines)
@@ -30,9 +34,8 @@ class microPins(QMainWindow, Ui_MainWindow):
         self.children = self.findChildren(QPlainTextEdit, regexLabels)
         # Guardar el estilo por default de los text box
         self.defaultStyle = self.children[0].styleSheet()
-        
-        self.show()
 
+        self.show()
 
     def MostrarPines(self):
         # Quitar formato de los botones
@@ -41,12 +44,10 @@ class microPins(QMainWindow, Ui_MainWindow):
         for i in range(len(self.children)):
             self.children[i].setPlainText(pines[i])
 
-	
     def ResetTextBox(self):
         for child in self.children:
             child.setStyleSheet(self.defaultStyle)
             child.setPlainText("")
-
 
     def ComprobarRespuestas(self):
         # Comprobar las respuestas usando el array de pines
