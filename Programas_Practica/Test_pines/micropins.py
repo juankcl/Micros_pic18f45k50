@@ -52,11 +52,16 @@ class microPins(QMainWindow, Ui_MainWindow):
     def ComprobarRespuestas(self):
         # Comprobar las respuestas usando el array de pines
         for i in range(len(self.children)):
+            # Correcto
             if self.children[i].toPlainText().upper() == pines[i].upper():
                 self.children[i].setStyleSheet(
                     'background-color: rgb(42, 181, 42);\
                      color: white;')
+            # Incorrecto
             else:
+                respuetaInc = self.children[i].toPlainText()
+                respuetaInc += " (" + pines[i] + ")"
+                self.children[i].setPlainText(respuetaInc)
                 self.children[i].setStyleSheet(
                     'background-color: rgb(188, 42, 42);\
                      color: white;')
