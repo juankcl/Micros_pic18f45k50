@@ -15,8 +15,3 @@ Por último el botón de *reset* simplemente borra cualquier campo que hayan esc
 Para poder ejecutar este programa es necesario tener Python3 e instalar la paquetería de PyQt5 utilizando el siguiente comando:
 
 `pip install pyqt5`
-
-
-## Todo
-- Contar número de respuestas correctas e incorrectas
-- Mostrar la respuesta correcta al lado de una respuesta incorrecta

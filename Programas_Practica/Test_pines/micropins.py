@@ -4,7 +4,7 @@ import sys
 # pip install pyqt5
 from PyQt5 import QtCore
 from PyQt5.QtGui import QPixmap, QPalette
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPlainTextEdit
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPlainTextEdit, QMessageBox
 from PyQt5 import uic
 
 # Cargar archivo de interfaz
@@ -50,6 +50,7 @@ class microPins(QMainWindow, Ui_MainWindow):
             child.setPlainText("")
 
     def ComprobarRespuestas(self):
+        incorrectas = 0
         # Comprobar las respuestas usando el array de pines
         for i in range(len(self.children)):
             # Correcto
@@ -59,13 +60,24 @@ class microPins(QMainWindow, Ui_MainWindow):
                      color: white;')
             # Incorrecto
             else:
+                incorrectas += 1
                 respuetaInc = self.children[i].toPlainText()
                 respuetaInc += " (" + pines[i] + ")"
                 self.children[i].setPlainText(respuetaInc)
                 self.children[i].setStyleSheet(
                     'background-color: rgb(188, 42, 42);\
                      color: white;')
-
+        dialog = QMessageBox()
+        dialog.setWindowTitle("Resultados")
+        if incorrectas == 1:
+            dialog.setText("¡Tuviste " + str(40 - incorrectas) +
+                           " respuestas correctas!\n Y " + str(incorrectas) + " respuesta incorrecta.")
+        elif incorrectas > 0:
+            dialog.setText("¡Tuviste " + str(40 - incorrectas) +
+                           " respuestas correctas!\n Y " + str(incorrectas) + " respuestas incorrectas.")
+        else:
+            dialog.setText("¡Todas tus respuestas son correctas!")
+        dialog.exec()
 
 if __name__ == "__main__":
     app = QApplication([])
