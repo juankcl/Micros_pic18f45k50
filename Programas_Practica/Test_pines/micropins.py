@@ -13,7 +13,7 @@ Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 # Array con los nombres de todos los pines
 pines = ["RE3", "RA0", "RA1", "RA2", "RA3", "RA4", "RA5", "RE0", "RE1", "RE2",
-         "VDD", "VSS", "RA7", "RA6", "RC0", "RC1", "RC2", "Vusb", "RD0", "RD1",
+         "Vdd", "Vss", "RA7", "RA6", "RC0", "RC1", "RC2", "Vusb", "RD0", "RD1",
          "RB7", "RB6", "RB5", "RB4", "RB3", "RB2", "RB1", "RB0", "Vdd", "Vss",
          "RD7", "RD6", "RD5", "RD4", "RC7", "RC6", "D+", "D-", "RD3", "RD2"]
 
