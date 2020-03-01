@@ -1,59 +1,59 @@
 Tipo,Pregunta,Respuesta,Tip,Inciso A,Inciso B,Inciso C,Inciso D
-PA,Sumar W y F,ADDWF,ADD W to F,0,0,0,0
-PA,Sumar W y F con acarreo,ADDWFC,ADD W to F with Carry,0,0,0,0
-PA,Operación AND entre W y F,ANDWF,AND W with F,0,0,0,0
-PA,Poner todos los bits de F en 0,CLRF,CleaR F,0,0,0,0
-PA,Complemento de F (Poner todos los 1s en 0 y los 0s en 1),COMF,COMplement F,0,0,0,0
-PA,Comparar F con W y saltar si es igual,CPFSEQ,ComPare F Skip if Equal,0,0,0,0
-PA,Comparar F con W y saltar si es mayor,CPFSGT,ComPare F Skip if Greater Than,0,0,0,0
-PA,Comparar F con W y saltar si es menor,CPFSLT,ComPare F Skip if Less Than,0,0,0,0
-PA,Decrementar F,DECF,DECrement F,0,0,0,0
-PA,Decrementar F y saltar si el resultado es 0,DECFSZ,DECrement F Skip if Zero,0,0,0,0
-PA,Decrementar F y saltar si el resultado NO es 0,DCFSNZ,DECrement F Skip if Not Zero,0,0,0,0
-PA,Incrementar F,INCF,INCrement F,0,0,0,0
-PA,Incrementar F y saltar si el resultado es 0,INCFSZ,INCrement F Skip if Zero,0,0,0,0
-PA,Incrementar F y saltar si el resultado NO es 0,INFSNZ,INCrement F Skip if Not Zero,0,0,0,0
-PA,OR incluyente W con F,IORWF,Inclusive OR W with F,0,0,0,0
-PA,Mover a F,MOVF,MOVe F,0,0,0,0
-PA,Mover de Fs a Fd,MOVFF,MOVe F F,0,0,0,0
-PA,Mover de W a F,MOVWF,MOVe W F,0,0,0,0
-PA,Multiplicar W con F,MULWF,MULtiply W F,0,0,0,0
-PA,Negar F (Complemento a 2),NEGF,NEGate F,0,0,0,0
-PA,Rotar F a la izquierda con carry,RLCF,Rotate Left Carry F,0,0,0,0
-PA,Rotar F a la izquierda sin carry,RLNCF,Rotate Left No Carry F,0,0,0,0
-PA,Rotar F a la derecha con carry,RRCF,Rotate Right Carry F,0,0,0,0
-PA,Rotar F a la derecha sin carry,RRNCF,Rotate Right No Carry F,0,0,0,0
-PA,Poner todos los bits de F en 1,SETF,SET F,0,0,0,0
-PA,Restar F de W con préstamo,SUBFWB,SUBstract F W with Borrow,0,0,0,0
-PA,Restar W de F,SUBWF,SUBstract W F,0,0,0,0
-PA,Restar W de F con préstamo,SUBWFB,SUBstract  W F with Borrow,0,0,0,0
-PA,Intercambiar los cuatro bits mas significativos con los cuatro bits menos significativos,SWAPF,SWAP F,0,0,0,0
-PA,Probar F saltar si es 0,TSTFSZ,TeST F Skip if Zero,0,0,0,0
-PA,OR exclusivo W con F,XORWF,eXclusive or W F,0,0,0,0
-PA,Poner bit en 0,BCF,Bit Clear F,0,0,0,0
-PA,Poner bit en 1,BSF,Bit Set F,0,0,0,0
-PA,"Probar bit, saltar si está en 0",BTFSC,Bit Test F Skip if Clear,0,0,0,0
-PA,"Probar bit, saltar si está en 1",BTFSS,Bit Test F Skip if Set,0,0,0,0
-PA,"Alternar bit (si está en 1 ponerlo en 0, si está en 0 ponerlo en 1)",BTG,Bit ToGle,0,0,0,0
-PA,Branch si hay acarreo,BC,Branch Carry,0,0,0,0
-PA,Branch si es negativo,BN,Branch Negative,0,0,0,0
-PA,Branch si no hay carry,BNC,Branch No Carry,0,0,0,0
-PA,Branch si no es negativo,BNN,Branch No Negative,0,0,0,0
-PA,Branch si no hay desborde,BNOV,Branch No Overflow,0,0,0,0
-PA,Branch si no es cero,BNZ,Branch if Not Zero,0,0,0,0
-PA,Branch si hay desborde,BOV,Branch if Overflow,0,0,0,0
-PA,Branch incondicionalmente,BRA,???,0,0,0,0
-PA,Branch si es cero,BZ,Branch if Zero,0,0,0,0
-PA,Llamar una subrutina,CALL,CALL subroutine,0,0,0,0
-PA,Resetear el temporizador del perro guardián,CLRWDT,CleaR Watch Dog Timer,0,0,0,0
-PA,Ajuste decimal registro W,DAW,Decimal Adjustment W,0,0,0,0
-PA,Ir a una dirección,GOTO,GOTO direction,0,0,0,0
-PA,No operación,NOP,NO Operation,0,0,0,0
-PA,Pop del stack,POP,POP,0,0,0,0
-PA,Push al stack,PUSH,PUSH,0,0,0,0
-PA,Llamada relativa,RCALL,Relative CALL,0,0,0,0
-PA,Reiniciar,RESET,RESET,0,0,0,0
-PA,Regresar de una interrupción,RETFIE,RETURN From Interruption (no sé de donde sale la E),0,0,0,0
-PA,Regresar con un literal en el registro W,RETLW,RETurn Literal in W,0,0,0,0
-PA,Regresar de una subrutina,RETURN,RETURN,0,0,0,0
-PA,Ir a modo standby,SLEEP,SLEEP,0,0,0,0
+PA,Sumar W y F,ADDWF,ADD W to F,,,,
+PA,Sumar W y F con acarreo,ADDWFC,ADD W to F with Carry,,,,
+PA,Operación AND entre W y F,ANDWF,AND W with F,,,,
+PA,Poner todos los bits de F en 0,CLRF,CleaR F,,,,
+PA,Complemento de F (Poner todos los 1s en 0 y los 0s en 1),COMF,COMplement F,,,,
+PA,Comparar F con W y saltar si es igual,CPFSEQ,ComPare F Skip if Equal,,,,
+PA,Comparar F con W y saltar si es mayor,CPFSGT,ComPare F Skip if Greater Than,,,,
+PA,Comparar F con W y saltar si es menor,CPFSLT,ComPare F Skip if Less Than,,,,
+PA,Decrementar F,DECF,DECrement F,,,,
+PA,Decrementar F y saltar si el resultado es 0,DECFSZ,DECrement F Skip if Zero,,,,
+PA,Decrementar F y saltar si el resultado NO es 0,DCFSNZ,DECrement F Skip if Not Zero,,,,
+PA,Incrementar F,INCF,INCrement F,,,,
+PA,Incrementar F y saltar si el resultado es 0,INCFSZ,INCrement F Skip if Zero,,,,
+PA,Incrementar F y saltar si el resultado NO es 0,INFSNZ,INCrement F Skip if Not Zero,,,,
+PA,OR incluyente W con F,IORWF,Inclusive OR W with F,,,,
+PA,Mover a F,MOVF,MOVe F,,,,
+PA,Mover de Fs a Fd,MOVFF,MOVe F F,,,,
+PA,Mover de W a F,MOVWF,MOVe W F,,,,
+PA,Multiplicar W con F,MULWF,MULtiply W F,,,,
+PA,Negar F (Complemento a 2),NEGF,NEGate F,,,,
+PA,Rotar F a la izquierda con carry,RLCF,Rotate Left Carry F,,,,
+PA,Rotar F a la izquierda sin carry,RLNCF,Rotate Left No Carry F,,,,
+PA,Rotar F a la derecha con carry,RRCF,Rotate Right Carry F,,,,
+PA,Rotar F a la derecha sin carry,RRNCF,Rotate Right No Carry F,,,,
+PA,Poner todos los bits de F en 1,SETF,SET F,,,,
+PA,Restar F de W con préstamo,SUBFWB,SUBstract F W with Borrow,,,,
+PA,Restar W de F,SUBWF,SUBstract W F,,,,
+PA,Restar W de F con préstamo,SUBWFB,SUBstract  W F with Borrow,,,,
+PA,Intercambiar los cuatro bits mas significativos con los cuatro bits menos significativos,SWAPF,SWAP F,,,,
+PA,Probar F saltar si es 0,TSTFSZ,TeST F Skip if Zero,,,,
+PA,OR exclusivo W con F,XORWF,eXclusive or W F,,,,
+PA,Poner bit en 0,BCF,Bit Clear F,,,,
+PA,Poner bit en 1,BSF,Bit Set F,,,,
+PA,"Probar bit, saltar si está en 0",BTFSC,Bit Test F Skip if Clear,,,,
+PA,"Probar bit, saltar si está en 1",BTFSS,Bit Test F Skip if Set,,,,
+PA,"Alternar bit (si está en 1 ponerlo en 0, si está en 0 ponerlo en 1)",BTG,Bit ToGle,,,,
+PA,Branch si hay acarreo,BC,Branch Carry,,,,
+PA,Branch si es negativo,BN,Branch Negative,,,,
+PA,Branch si no hay carry,BNC,Branch No Carry,,,,
+PA,Branch si no es negativo,BNN,Branch No Negative,,,,
+PA,Branch si no hay desborde,BNOV,Branch No Overflow,,,,
+PA,Branch si no es cero,BNZ,Branch if Not Zero,,,,
+PA,Branch si hay desborde,BOV,Branch if Overflow,,,,
+PA,Branch incondicionalmente,BRA,???,,,,
+PA,Branch si es cero,BZ,Branch if Zero,,,,
+PA,Llamar una subrutina,CALL,CALL subroutine,,,,
+PA,Resetear el temporizador del perro guardián,CLRWDT,CleaR Watch Dog Timer,,,,
+PA,Ajuste decimal registro W,DAW,Decimal Adjustment W,,,,
+PA,Ir a una dirección,GOTO,GOTO direction,,,,
+PA,No operación,NOP,NO Operation,,,,
+PA,Pop del stack,POP,POP,,,,
+PA,Push al stack,PUSH,PUSH,,,,
+PA,Llamada relativa,RCALL,Relative CALL,,,,
+PA,Reiniciar,RESET,RESET,,,,
+PA,Regresar de una interrupción,RETFIE,RETURN From Interruption (no sé de donde sale la E),,,,
+PA,Regresar con un literal en el registro W,RETLW,RETurn Literal in W,,,,
+PA,Regresar de una subrutina,RETURN,RETURN,,,,
+PA,Ir a modo standby,SLEEP,SLEEP,,,,
