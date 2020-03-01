@@ -76,8 +76,6 @@ def ComenzarCuestionario(rutaArchivo: str):
     df = pd.read_csv(rutaArchivo)
     n_row, n_col = df.shape
 
-    print(df)
-
     # Revolver que número de columna usar
     rowNum = [i for i in range(n_row)]
     random.shuffle(rowNum)
