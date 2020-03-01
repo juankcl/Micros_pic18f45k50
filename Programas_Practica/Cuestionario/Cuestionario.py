@@ -98,7 +98,8 @@ def ComenzarCuestionario(rutaArchivo: str):
                 correctas += 1
             else:
                 incorrectas += 1
-                print("Tip: " + df.at[row, 'Tip'])
+                if df.at[row, 'Tip']:
+                    print("Tip: " + df.at[row, 'Tip'])
                 time.sleep(0.5)
                 counter += 1
             continue
@@ -133,7 +134,8 @@ def ComenzarCuestionario(rutaArchivo: str):
             correctas += 1
         else:
             incorrectas += 1
-            print("Tip: " + df.at[row, 'Tip'])
+            if df.at[row, 'Tip']:
+                print("Tip: " + df.at[row, 'Tip'])
         time.sleep(0.5)
         counter += 1
 
