@@ -46,6 +46,7 @@ def OpcionMultiple(df: DataFrame, row: int) -> bool:
         inciso += 1
     while True:
         respuesta = input()
+        respuesta = respuesta.upper()
         if ord(respuesta[0]) < 65 or ord(respuesta[0]) > 68:
             print("Solo debe escribir el inciso")
         else:
@@ -145,6 +146,9 @@ def ComenzarCuestionario(rutaArchivo: str):
         print("🎆  ¡Felicidades todas tus respuestas son correctas! 🎆")
     else:
         print("Respuestas incorrectas\t" + str(incorrectas) + "  ❌")
+    
+    calificacion = correctas/n_row * 10
+    print("Calificación: " + str(round(calificacion,1)))
 
 
 if __name__ == "__main__":
