@@ -2,7 +2,7 @@
 ### Hecho por Emilio Puga
 Programa hecho en Python
 ## Descripción
-Este programa es utilizado para generar un cuestionario a partir de un archivo csv.
+Este programa es utilizado para generar un cuestionario a partir de un archivo xlsx.
 
 Hay tres tipos de preguntas:
 - Pregunta abierta: El programa simplemente revisa si la respuesta es exactamente igual (no toma en cuenta las mayúsculas o minúsculas) a la respuesta correcta.
@@ -10,14 +10,14 @@ Hay tres tipos de preguntas:
 - Opción múltiple: Muestra los incisos, estos son mostrados al azar cada vez que se muestra la pregunta y se le pide al usuario escoger un inciso.
 
 ## Uso
-Al iniciar el programa, este escanea la carpeta de *Preguntas* buscando archivos de tipo `.csv`, a continuación muestra todos los archivos que encontró y se debe escoger uno escribiendo el número del archivo.
+Al iniciar el programa, este escanea la carpeta de *Preguntas* buscando archivos de tipo `.xlsx`, a continuación muestra todos los archivos que encontró y se debe escoger uno escribiendo el número del archivo.
 
 A continuación comienza la evaluación, mostrando el número de la pregunta. El tipo de pregunta, la pregunta y se le pide al usuario proporcionar la respuesta. Después de esto muestra si la respuesta era correcta o incorrecta.
 
-### Sintaxis archivo CSV
-(Por el momento se recomienda usar excel para escribir los archivos, al momento de guardar se debe poner que es en formato csv)
+### Sintaxis archivo xlsx
+(Por el momento se recomienda usar excel para escribir los archivos, al momento de guardar se debe poner que es en formato xlsx)
 
-El archivo csv debe seguir el siguiente formato:
+El archivo xlsx debe seguir el siguiente formato:
 
 | Tipo | Pregunta          | Respuesta | Tip                                             | Inciso A | Inciso B | Inciso C | Inciso D  |
 |------|-------------------|-----------|-------------------------------------------------|----------|----------|----------|-----------|
@@ -34,4 +34,7 @@ El archivo csv debe seguir el siguiente formato:
 ## Instalación
 Para poder ejecutar este programa es necesario tener Python3 e instalar la paquetería de Pandas utilizando el siguiente comando:
 
-`pip install pandas`
+```
+pip install pandas
+pip install xlrd
+```
