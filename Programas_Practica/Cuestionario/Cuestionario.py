@@ -22,12 +22,12 @@ import os
 
 
 def ChecarRespuesta(respuesta: str, df: DataFrame, row) -> bool:
-    if respuesta.upper() == df.at[row, 'Respuesta'].upper():
+    if respuesta.upper() == str(df.at[row, 'Respuesta']).upper():
         print("¡Respuesta correcta! ✅")
         return True
     else:
         print("Respuesta incorrecta ❌ , la respuesta correcta era: " +
-              df.at[row, 'Respuesta'])
+              str(df.at[row, 'Respuesta']))
         return False
 
 
@@ -73,7 +73,7 @@ def OpcionMultiple(df: DataFrame, row: int) -> bool:
 
 def ComenzarCuestionario(rutaArchivo: str):
     print('Cargando ' + rutaArchivo)
-    df = pd.read_csv(rutaArchivo)
+    df = pd.read_excel(rutaArchivo)
     n_row, n_col = df.shape
 
     # Revolver que número de columna usar
@@ -100,8 +100,8 @@ def ComenzarCuestionario(rutaArchivo: str):
                 incorrectas += 1
                 if df.at[row, 'Tip']:
                     print("Tip: " + df.at[row, 'Tip'])
-                time.sleep(0.5)
-                counter += 1
+            time.sleep(0.5)
+            counter += 1
             continue
 
         # Escribir la respuesta
@@ -118,7 +118,7 @@ def ComenzarCuestionario(rutaArchivo: str):
 
             print("\nEscribe V para verdadero o F para falso: ")
         else:
-            print("ERROR en " + str(row))
+            print("ERROR en " + str(row + 2))
 
         # Revisar que si se introduzca V o F en preguntas de verdadero o falso
         if tipo == "VF":
@@ -128,15 +128,16 @@ def ComenzarCuestionario(rutaArchivo: str):
                     break
                 print("Solo escribe V para verdadero o F para falso")
         else:
-            respuesta = input()
+            respuesta = str(input())
         
         if ChecarRespuesta(respuesta, df, row) == True:
             correctas += 1
+            time.sleep(0.5)
         else:
             incorrectas += 1
             if df.at[row, 'Tip']:
                 print("Tip: " + df.at[row, 'Tip'])
-        time.sleep(0.5)
+            time.sleep(1.5)
         counter += 1
 
     print("\n\n\n+=+=+= RESULTADOS +=+=+=\n")
@@ -158,7 +159,7 @@ if __name__ == "__main__":
     # r=root, d=directories, f = files
     for r, d, f, in os.walk(path):
         for file in f:
-            if '.csv' in file:
+            if '.xlsx' in file:
                 files.append(os.path.join(r, file))
 
     # Mostrar menu
