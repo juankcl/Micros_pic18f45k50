@@ -1,9 +1,43 @@
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+  }
+
+  .tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+  }
+
+  .tg .tg-c3ow {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: top
+  }
+
+  .tg .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top
+  }
 </style>
 <table class="tg">
   <tr>
@@ -83,7 +117,7 @@
     <td class="tg-0pky">CPFSGT</td>
     <td class="tg-0pky">Compare f skip if is <br>Greater Than<br></td>
     <td class="tg-0pky">f,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Compara f con el WREG y salta si es mayor</td>
     <td class="tg-c3ow">1(2 or 3)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -92,7 +126,7 @@
     <td class="tg-0pky">CPFSLT</td>
     <td class="tg-0pky">Compare f skip if is Less <br>Than<br></td>
     <td class="tg-0pky">f,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Compara f con el WREG y salta si es menor</td>
     <td class="tg-c3ow">1(2 or 3)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -101,7 +135,7 @@
     <td class="tg-0pky">DECF</td>
     <td class="tg-0pky">Decrement f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Decrementa f en 1 operacion binaria</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -110,7 +144,7 @@
     <td class="tg-0pky">DECFSZ</td>
     <td class="tg-0pky">Decrement f, skip if is Zero</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Decrementa f y salta si el resultado es 0</td>
     <td class="tg-c3ow">1(2 or 3)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -119,7 +153,7 @@
     <td class="tg-0pky">DCFSNZ</td>
     <td class="tg-0pky">Decrement f, skip if isn,t Zero</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Decremeta f salta si el resultado no es 0</td>
     <td class="tg-c3ow">1(2 or 3)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -128,7 +162,7 @@
     <td class="tg-0pky">INCF</td>
     <td class="tg-0pky">Increment f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Incrementa f en 1</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -137,7 +171,7 @@
     <td class="tg-0pky">INCFSZ</td>
     <td class="tg-0pky">Increment f, skip if is Zero</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Incrementa f y salta si es 0</td>
     <td class="tg-c3ow">1(2 or 3)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -146,7 +180,7 @@
     <td class="tg-0pky">INFSNZ</td>
     <td class="tg-0pky">Increment f, skip if is not zero</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Incrementa f y salta si no es 0</td>
     <td class="tg-c3ow">1(2 or 3)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -155,7 +189,7 @@
     <td class="tg-0pky">IORWF</td>
     <td class="tg-0pky">Inclusive OR WREG with f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">OR inclusiva entre f y WREG</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -164,7 +198,7 @@
     <td class="tg-0pky">MOVF</td>
     <td class="tg-0pky">Move f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Mueve f<br></td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -173,7 +207,7 @@
     <td class="tg-0pky">MOVFF</td>
     <td class="tg-0pky">Move f(source) to f(destination)</td>
     <td class="tg-0pky">f(s),f(d)</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Mueve el primer f al segundo f</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -182,7 +216,7 @@
     <td class="tg-0pky">MOVWF</td>
     <td class="tg-0pky">Move WREG to f</td>
     <td class="tg-0pky">f,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Mueve el WREG a f</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -191,7 +225,7 @@
     <td class="tg-0pky">MULWF</td>
     <td class="tg-0pky">Multiply WREG with f</td>
     <td class="tg-0pky">f,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Multiplica WREG con f</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -200,7 +234,7 @@
     <td class="tg-0pky">NEGF</td>
     <td class="tg-0pky">Negate f</td>
     <td class="tg-0pky">f,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Negación de f</td>
     <td class="tg-c3ow">1<br></td>
     <td class="tg-0pky"></td>
   </tr>
@@ -209,7 +243,7 @@
     <td class="tg-0pky">RLCF</td>
     <td class="tg-0pky">Rotate Left Carry f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Rotación de f a la izquierda con acarreo</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -218,7 +252,7 @@
     <td class="tg-0pky">RLNCF</td>
     <td class="tg-0pky">Rotate Left no carry f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Rotación de f a la izquierda sin acarreo</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -227,7 +261,7 @@
     <td class="tg-0pky">RRCF</td>
     <td class="tg-0pky">Rotate Right Carry f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Rotación de f a la derecha con acarreo</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -236,7 +270,7 @@
     <td class="tg-0pky">RRNCF</td>
     <td class="tg-0pky">Rotate Right No Carry f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Rotación de f a la derecha sin acarreo</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -245,7 +279,7 @@
     <td class="tg-0pky">SETF</td>
     <td class="tg-0pky">Set f</td>
     <td class="tg-0pky">f,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Coloca f</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -254,7 +288,7 @@
     <td class="tg-0pky">SUBFWB</td>
     <td class="tg-0pky">Subtract from WREG with borrow</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Sustrae f de WREG con prestamo </td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -263,7 +297,7 @@
     <td class="tg-0pky">SUBWF</td>
     <td class="tg-0pky">Subtract WREG from f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Sustrae WREG de f sin prestamo</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -272,7 +306,7 @@
     <td class="tg-0pky">SUBWFB</td>
     <td class="tg-0pky">Subtract WREG from f with borrow</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Sustrae WREG de f con prestamo</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -290,7 +324,7 @@
     <td class="tg-0pky">TSTFSZ</td>
     <td class="tg-0pky">Test f, skip if Zero</td>
     <td class="tg-0pky">f,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Prueba f y salta si es 0</td>
     <td class="tg-c3ow">1(2 or 3)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -299,7 +333,7 @@
     <td class="tg-0pky">XORWF</td>
     <td class="tg-0pky">Exclusive OR WREG with f</td>
     <td class="tg-0pky">f,d,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">OR exclusiva de WREG con f</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -317,7 +351,7 @@
     <td class="tg-0pky">BCF</td>
     <td class="tg-0pky">Bit Clear f</td>
     <td class="tg-0pky">f,b,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Coloca en 0 el bit seleccionado de f</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -326,7 +360,7 @@
     <td class="tg-0pky">BSF</td>
     <td class="tg-0pky">Bit Set f</td>
     <td class="tg-0pky">f,b,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Coloca en 1 el bit seleccionado de f</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -335,7 +369,7 @@
     <td class="tg-0pky">BTFSC</td>
     <td class="tg-0pky">Bit Test f, skip if Clear</td>
     <td class="tg-0pky">f,b,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Checa el bit seleccionado de f <br>y salta si es 0</td>
     <td class="tg-c3ow">1(2 or 3)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -344,7 +378,7 @@
     <td class="tg-0pky">BTFSS</td>
     <td class="tg-0pky">Bit Test f, skip if set</td>
     <td class="tg-0pky">f,b,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Checa el bit seleccionado de f <br>y salta si es 1</td>
     <td class="tg-c3ow">1(2 or 3)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -353,7 +387,7 @@
     <td class="tg-0pky">BTG</td>
     <td class="tg-0pky">Bit Toggle f</td>
     <td class="tg-0pky">f,b,a</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Cambia el estado del bit al contrario</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -371,7 +405,7 @@
     <td class="tg-0pky">BC</td>
     <td class="tg-0pky">Branch if Carry</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Salta si hay acarreo</td>
     <td class="tg-c3ow">1(2)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -380,7 +414,7 @@
     <td class="tg-0pky">BN</td>
     <td class="tg-0pky">Branch if Negative</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Salta si es negativo</td>
     <td class="tg-c3ow">1(2)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -389,7 +423,7 @@
     <td class="tg-0pky">BNC</td>
     <td class="tg-0pky">Branch if Not Carry</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Salta si no hay acarreo</td>
     <td class="tg-c3ow">1(2)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -398,7 +432,7 @@
     <td class="tg-0pky">BNN</td>
     <td class="tg-0pky">Branch if Not Negative</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Salta si no es negativo</td>
     <td class="tg-c3ow">1(2)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -407,7 +441,7 @@
     <td class="tg-0pky">BNOV</td>
     <td class="tg-0pky">Branch if Not Overflow</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Salta si no hay Sobreflujo</td>
     <td class="tg-c3ow">1(2)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -416,7 +450,7 @@
     <td class="tg-0pky">BNZ</td>
     <td class="tg-0pky">Branch if not Zero</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Salta si no es cero</td>
     <td class="tg-c3ow">1(2)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -425,7 +459,7 @@
     <td class="tg-0pky">BOV</td>
     <td class="tg-0pky">Branch if Overflow</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Salta si hay Sobreflujo</td>
     <td class="tg-c3ow">1(2)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -434,7 +468,7 @@
     <td class="tg-0pky">BRA</td>
     <td class="tg-0pky">Branch Unconditionally</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Salta Incondicionalmente</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -443,7 +477,7 @@
     <td class="tg-0pky">BZ</td>
     <td class="tg-0pky">Branch if Zero</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Salta si es cero</td>
     <td class="tg-c3ow">1(2)</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -452,7 +486,7 @@
     <td class="tg-0pky">CALL</td>
     <td class="tg-0pky">call subroutine</td>
     <td class="tg-0pky">k,s</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Llamar a subrutina</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -461,7 +495,7 @@
     <td class="tg-0pky">CLRWDT<br></td>
     <td class="tg-0pky">Clear WatchDog Timer</td>
     <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Limpiar El WatchDog</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -470,7 +504,7 @@
     <td class="tg-0pky">DAW</td>
     <td class="tg-0pky">Decimal Adjust WREG</td>
     <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Ajuste decimal del WREG</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -479,7 +513,7 @@
     <td class="tg-0pky">GOTO</td>
     <td class="tg-0pky">Go to address</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Ir a la instrucción (Dirección)</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -488,7 +522,7 @@
     <td class="tg-0pky">NOP</td>
     <td class="tg-0pky">No operation</td>
     <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">No operación</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -497,7 +531,7 @@
     <td class="tg-0pky">POP</td>
     <td class="tg-0pky">Pop top of return satck</td>
     <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Saca el ultimo elemento de la pila</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -506,7 +540,7 @@
     <td class="tg-0pky">PUSH</td>
     <td class="tg-0pky">Push top of return stack</td>
     <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Coloca nuevo elemento en la pila</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -515,7 +549,7 @@
     <td class="tg-0pky">RCALL</td>
     <td class="tg-0pky">Relative Call</td>
     <td class="tg-0pky">n</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Llamada relativa</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -524,7 +558,7 @@
     <td class="tg-0pky">RESET</td>
     <td class="tg-0pky">Software device Reset</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Limpia y reinicia desde Software</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -533,7 +567,7 @@
     <td class="tg-0pky">RETFIE</td>
     <td class="tg-0pky">Return from interrupt enable </td>
     <td class="tg-0pky">s</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Retorna de interrupción habilitada</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -542,7 +576,7 @@
     <td class="tg-0pky">RETLW</td>
     <td class="tg-0pky">Return with literal in WREG</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Regresa con literal en WREG</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -551,7 +585,7 @@
     <td class="tg-0pky">RETURN </td>
     <td class="tg-0pky">Return from Subroutine</td>
     <td class="tg-0pky">s</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Regresa de la subrutina</td>
     <td class="tg-c3ow">2<br></td>
     <td class="tg-0pky"></td>
   </tr>
@@ -560,7 +594,7 @@
     <td class="tg-0pky">SLEEP </td>
     <td class="tg-0pky">Goto into Standby mode</td>
     <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Ir al modo de espera</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -578,7 +612,7 @@
     <td class="tg-0pky">ADDLW </td>
     <td class="tg-0pky">Add literal and WREG</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Suma una literal a WREG</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -587,7 +621,7 @@
     <td class="tg-0pky">ANDLW</td>
     <td class="tg-0pky">AND literal with WREG</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Operación AND con el WREG</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -596,7 +630,7 @@
     <td class="tg-0pky">IORLW</td>
     <td class="tg-0pky">Inclusive OR literal with WREG</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Operación OR con el WREG</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -605,7 +639,7 @@
     <td class="tg-0pky">LFSR</td>
     <td class="tg-0pky">Move literal (12 bit) to FSR</td>
     <td class="tg-0pky">f,k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Mueve la variable o número <br>(12 bits) a FSR</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -614,7 +648,7 @@
     <td class="tg-0pky">MOVLB</td>
     <td class="tg-0pky">Move literal to BSR</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Mueve la variable o número a BSR</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -623,7 +657,7 @@
     <td class="tg-0pky">MOVLW</td>
     <td class="tg-0pky">Move literal to WREG</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Mueve la variable a o número a WREG</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -632,7 +666,7 @@
     <td class="tg-0pky">MULLW</td>
     <td class="tg-0pky">Multiply literal with WREG</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Multiplica la variable o número con WREG</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -641,7 +675,7 @@
     <td class="tg-0pky">RETLW</td>
     <td class="tg-0pky">Return with literal in WREG</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Regresa con literal en WREG</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -650,7 +684,7 @@
     <td class="tg-0pky">SUBLW</td>
     <td class="tg-0pky">Subtract WREG from literal</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Resta WREG de la variable </td>
     <td class="tg-c3ow">1<br></td>
     <td class="tg-0pky"></td>
   </tr>
@@ -659,7 +693,7 @@
     <td class="tg-0pky">XORLW</td>
     <td class="tg-0pky">Exclusive OR literal with WREG</td>
     <td class="tg-0pky">k</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Operación OR Exclusiva con el WREG</td>
     <td class="tg-c3ow">1</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -677,7 +711,7 @@
     <td class="tg-0pky">TBLRD*</td>
     <td class="tg-0pky">Table Read</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Lee la Tabla</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -686,7 +720,7 @@
     <td class="tg-0pky">TBLRD*+</td>
     <td class="tg-0pky">Table Read With Post Increment</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Lee la Tabla e Incrementa</td>
     <td class="tg-c3ow"></td>
     <td class="tg-0pky"></td>
   </tr>
@@ -695,7 +729,7 @@
     <td class="tg-0pky">TBLRD*-</td>
     <td class="tg-0pky">Table Read With Post Decrement</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Lee la Tabla y decrementa </td>
     <td class="tg-c3ow"></td>
     <td class="tg-0pky"></td>
   </tr>
@@ -704,7 +738,7 @@
     <td class="tg-0pky">TBLRD+*</td>
     <td class="tg-0pky">Table Read&nbsp;&nbsp;With Pre Increment</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Incrementa y Lee la Tabla</td>
     <td class="tg-c3ow"></td>
     <td class="tg-0pky"></td>
   </tr>
@@ -713,7 +747,7 @@
     <td class="tg-0pky">TBLWT*</td>
     <td class="tg-0pky">Table Write</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Escribe en la tabla</td>
     <td class="tg-c3ow">2</td>
     <td class="tg-0pky"></td>
   </tr>
@@ -722,7 +756,7 @@
     <td class="tg-0pky">TBLWT*+</td>
     <td class="tg-0pky">Table Write with Post Increment</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Escribe en la tabla y Incrementa </td>
     <td class="tg-c3ow"></td>
     <td class="tg-0pky"></td>
   </tr>
@@ -731,7 +765,7 @@
     <td class="tg-0pky">TBLWT*-</td>
     <td class="tg-0pky">Table Write with Post Decrement</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Escribe en la tabla y Decrementa <br></td>
     <td class="tg-c3ow"></td>
     <td class="tg-0pky"></td>
   </tr>
@@ -740,7 +774,7 @@
     <td class="tg-0pky">TBLWT+*</td>
     <td class="tg-0pky">Table Write with Pre Increment</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Incrementa y escribe en la tabla</td>
     <td class="tg-c3ow"></td>
     <td class="tg-0pky"></td>
   </tr>
