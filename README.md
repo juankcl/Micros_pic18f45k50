@@ -30,7 +30,7 @@ Puedes encontrar mas acerca del al pcb que usamos para manipular el PIC en pági
 ## Autores ✒️
 
 * **JuankCl** - *Documentación* - [juankcl](https://github.com/juankcl)
-* **Emilio Puga** - *Códigos de ensayo de conceptos* - [losfroger](https://github.com/losfroger)
+* **Emilio Puga** - *Programas de práctica* - [losfroger](https://github.com/losfroger)
 
 ## Licencia 📄
 
