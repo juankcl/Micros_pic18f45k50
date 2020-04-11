@@ -10,6 +10,7 @@ _Codigos sobre el pic 18f45k50 2020_
 ### Pre-requisitos 📋
 
 _IDE Mplab_
+[Descarga última versión del sitio oficial](https://www.microchip.com/mplab/mplab-x-ide)
 _Proteus_
 
 ```
@@ -23,7 +24,7 @@ _MPLAB IDE y Proteus 8.9_
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+NO tenemmos wiki aún [Wiki](https://github.com/tu/proyecto/wiki)
 
 Puedes encontrar mas acerca del al pcb que usamos para manipular el PIC en página de su autor BeeDev [BeeDev UG](https://sites.google.com/view/beedev/p%C3%A1gina-principal?authuser=0)
 
